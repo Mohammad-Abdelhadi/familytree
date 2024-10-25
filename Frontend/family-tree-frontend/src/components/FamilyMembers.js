@@ -19,6 +19,7 @@ const FamilyMembers = () => {
         setLoading(false);
       }
     };
+    console.log("Family Members:", familyMembers);
 
     getFamilyMembers();
   }, []);

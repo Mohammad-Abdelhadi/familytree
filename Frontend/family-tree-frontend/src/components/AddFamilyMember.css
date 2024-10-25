@@ -1,0 +1,167 @@
+/* AddFamilyMember.css */
+.add-family-member {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+  }
+  
+  .add-family-member h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="date"],
+  .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group select {
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* تنسيق خاص لمجموعة العنوان ومعلومات الاتصال */
+  .form-group input[name^="address."],
+  .form-group input[name^="contactInfo."] {
+    width: calc(100% - 1rem);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* تنسيق خاص لصندوق الاختيار (checkbox) */
+  .form-group input[type="checkbox"] {
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* تنسيق زر الإضافة */
+  button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* تنسيق حالة التركيز */
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+  }
+  
+  /* تنسيق رسائل الخطأ */
+  .error-message {
+    color: #f44336;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* تنسيق للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .add-family-member {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="date"],
+    .form-group select {
+      padding: 0.6rem;
+    }
+  
+    button[type="submit"] {
+      padding: 0.8rem;
+    }
+  }
+  
+  /* تنسيق للحقول المطلوبة */
+  .form-group input:required {
+    border-right: 3px solid #4CAF50;
+  }
+  
+  /* تنسيق للقوائم المنسدلة */
+  .form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: left 0.7rem center;
+    background-size: 1em;
+    padding-left: 2rem;
+  }
+  
+  /* تنسيق لحالة التعطيل */
+  .form-group input:disabled,
+  .form-group select:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  /* تنسيق للتحقق من صحة الإدخال */
+  .form-group input:valid {
+    border-color: #4CAF50;
+  }
+  
+  .form-group input:invalid {
+    border-color: #f44336;
+  }
+  
+  /* تنسيق للتوضيحات */
+  .form-group .hint {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+  
+  /* تنسيق لمجموعة الأزرار */
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* تنسيق لزر الإلغاء */
+  .cancel-button {
+    background-color: #f44336;
+  }
+  
+  .cancel-button:hover {
+    background-color: #da190b;
+  }
