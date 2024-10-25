@@ -1,0 +1,30 @@
+/* src/components/FamilyMembers.css */
+.family-members {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .family-members h1 {
+    color: #333;
+  }
+  
+  .family-members ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .family-members li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .family-members li:hover {
+    background-color: #e0e0e0;
+  }
+  /* src/components/FamilyTree.css */
